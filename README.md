@@ -23,6 +23,26 @@
 * Clear Selection
 * Reveal Answer
 
+### Project Level Import ###
+ 
+ * build.gradle 
+ ```
+ allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ ```
+ ### Module Level Import ###
+ 
+  * build.gradle 
+ ```
+ dependencies {
+	        implementation 'com.github.arivista-digital:MCQ:v1.0'
+	}
+ ```
+
 ### How to use ###
 
  * activity_main Layout initialize
